@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from website.forms import NameForm
 # Create your views here.
+# Mahdis
 
 
 def test(request):
