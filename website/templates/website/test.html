@@ -1,0 +1,32 @@
+{% load static %} {% load blog_tags %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="{% url 'website:test' %}" method="post">
+      {% csrf_token %}
+      {{form}}
+      
+
+
+      <button type="submit">submit</button>
+    </form>
+    <!---<h1>Django Class</h1>
+    <p>Hello world Django</p>
+    <p>{% salam %}</p>
+    <p>{% multiply 10 10 %}</p>
+
+    {% current_time "%H:%M:%S" as clock %}
+    <p>ساعت: {{ clock }}</p>
+
+    <h1>List all posts</h1>
+    {% mahboob_post as result %} 
+    {% for post in result.posts %}
+    <p>{{ post.name }} - {{ post.created_at }}</p>
+    {% endfor %} --->
+  </body>
+</html>
